@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CampusOne | Student Dashboard</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- MOBILE MENU BUTTON -->
+  <button class="mobile-menu" id="mobileMenu">☰</button>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="brand">
+      <div class="brand-logo">C</div>
+
+      <div>
+        <h2>CampusOne</h2>
+        <span>Student Portal</span>
+      </div>
+    </div>
+
+    <nav class="navigation">
+
+      <p class="menu-title">MAIN MENU</p>
+
+      <a href="#" class="nav-link active" data-page="dashboard">
+        🏠 Dashboard
+      </a>
+
+      <a href="#" class="nav-link" data-page="notices">
+        📢 Notices
+      </a>
+
+      <a href="#" class="nav-link" data-page="calendar">
+        📅 Calendar
+      </a>
+
+      <a href="#" class="nav-link" data-page="search">
+        🔎 Smart Search
+      </a>
+
+      <a href="#" class="nav-link" data-page="services">
+        🏫 Campus Services
+      </a>
+
+      <a href="#" class="nav-link" data-page="events">
+        🎉 Clubs & Events
+      </a>
+
+      <p class="menu-title">SUPPORT</p>
+
+      <a href="#" class="nav-link" data-page="report">
+        ⚠️ Report a Problem
+      </a>
+
+      <a href="#" class="nav-link" data-page="profile">
+        👤 My Profile
+      </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+      <button id="logoutBtn">↪ Logout</button>
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+      <div class="global-search">
+        <span>🔎</span>
+        <input
+          type="text"
+          id="globalSearch"
+          placeholder="Search campus information..."
+        >
+      </div>
+
+      <div class="top-actions">
+
+        <button class="notification-btn" id="notificationBtn">
+          🔔
+          <span class="notification-dot"></span>
+        </button>
+
+        <div class="user-profile">
+
+          <div class="avatar">P</div>
+
+          <div class="user-info">
+            <strong>Priya Bohra</strong>
+            <span>MBA • Semester 1</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section id="dashboard" class="page-section active-page">
+
+      <div class="welcome">
+
+        <div>
+          <p class="date-label">TUESDAY, SEPTEMBER 9, 2026</p>
+
+          <h1>Good Morning, Priya! 👋</h1>
+
+          <p>
+            Here is everything you need for your campus today.
+          </p>
+        </div>
+
+        <button class="primary-btn" id="askCampusBtn">
+          ✨ Ask CampusOne
+        </button>
+
+      </div>
+
+
+      <!-- STAT CARDS -->
+
+      <div class="stats-grid">
+
+        <div class="stat-card">
+          <div class="stat-icon">📢</div>
+          <div>
+            <span>New Notices</span>
+            <h2>3</h2>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">🎉</div>
+          <div>
+            <span>Upcoming Events</span>
+            <h2>5</h2>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <div>
+            <span>Deadlines</span>
+            <h2>2</h2>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">✅</div>
+          <div>
+            <span>Tasks Completed</span>
+            <h2>8</h2>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- DASHBOARD GRID -->
+
+      <div class="dashboard-grid">
+
+        <!-- IMPORTANT NOTICE -->
+
+        <div class="card">
+
+          <div class="card-header">
+            <div>
+              <p class="small-label">IMPORTANT NOTICE</p>
+              <h2>Semester Registration Deadline</h2>
+            </div>
+
+            <span class="badge urgent">Urgent</span>
+          </div>
+
+          <p>
+            Semester registration must be completed before
+            September 12, 2026.
+          </p>
+
+          <div class="notice-footer">
+            <span>📅 September 12</span>
+            <span>🏢 Academic Office</span>
+            <span>🕔 5:00 PM</span>
+          </div>
+
+        </div>
+
+
+        <!-- TODAY'S SCHEDULE -->
+
+        <div class="card">
+
+          <div class="card-header">
+            <div>
+              <p class="small-label">TODAY'S SCHEDULE</p>
+              <h2>Your Classes</h2>
+            </div>
+          </div>
+
+          <div class="schedule">
+
+            <div class="schedule-item">
+              <span class="time">09:00 AM</span>
+              <div>
+                <strong>Financial Accounting</strong>
+                <small>Room 204 • Dr. Sharma</small>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <span class="time">11:00 AM</span>
+              <div>
+                <strong>Design Thinking</strong>
+                <small>Room 301 • Ms. Kapoor</small>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <span class="time">02:00 PM</span>
+              <div>
+                <strong>Business Communication</strong>
+                <small>Room 105 • Mr. Verma</small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- SMART SEARCH -->
+
+      <div class="card smart-search-card">
+
+        <div class="search-content">
+
+          <div>
+            <p class="small-label">CAMPUSONE AI</p>
+
+            <h2>What do you need help with?</h2>
+
+            <p>
+              Ask anything about your college, classes,
+              documents, events or services.
+            </p>
+          </div>
+
+          <div class="search-box">
+
+            <input
+              type="text"
+              id="dashboardSearch"
+              placeholder="Example: Where can I submit my scholarship form?"
+            >
+
+            <button id="dashboardSearchBtn">
+              Search
+            </button>
+
+          </div>
+
+          <div id="dashboardAnswer" class="search-answer"></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- LOWER GRID -->
+
+      <div class="lower-grid">
+
+        <!-- DEADLINES -->
+
+        <div class="card">
+
+          <div class="card-header">
+            <h2>Upcoming Deadlines</h2>
+
+            <button
+              class="text-btn"
+              data-page="calendar"
+            >
+              View All
+            </button>
+          </div>
+
+          <div class="deadline-list">
+
+            <div class="deadline">
+              <div class="deadline-date">
+                <strong>12</strong>
+                <span>SEP</span>
+              </div>
+
+              <div>
+                <strong>Semester Registration</strong>
+                <small>Academic Office</small>
+              </div>
+            </div>
+
+            <div class="deadline">
+              <div class="deadline-date">
+                <strong>18</strong>
+                <span>SEP</span>
+              </div>
+
+              <div>
+                <strong>Scholarship Application</strong>
+                <small>Student Welfare Office</small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- QUICK SERVICES -->
+
+        <div class="card">
+
+          <div class="card-header">
+            <h2>Quick Services</h2>
+          </div>
+
+          <div class="service-grid">
+
+            <button class="service-btn" data-service="Library">
+              📚
+              <span>Library</span>
+            </button>
+
+            <button class="service-btn" data-service="Examination">
+              📝
+              <span>Examination</span>
+            </button>
+
+            <button class="service-btn" data-service="Fees">
+              💳
+              <span>Fees</span>
+            </button>
+
+            <button class="service-btn" data-service="Certificates">
+              📄
+              <span>Certificates</span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= NOTICES ================= -->
+
+    <section id="notices" class="page-section">
+
+      <div class="page-heading">
+        <h1>Campus Notices 📢</h1>
+        <p>Stay updated with important college announcements.</p>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="academic">Academic</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="urgent">Urgent</button>
+      </div>
+
+      <div class="notice-list">
+
+        <div class="notice-card" data-category="urgent academic">
+          <span class="badge urgent">Urgent</span>
+          <h2>Semester Registration Deadline</h2>
+          <p>
+            Complete your semester registration before September 12.
+          </p>
+          <button class="outline-btn notice-detail">
+            View Details
+          </button>
+        </div>
+
+        <div class="notice-card" data-category="academic">
+          <span class="badge">Academic</span>
+          <h2>Internal Assessment Schedule</h2>
+          <p>
+            Internal assessments will begin from September 20.
+          </p>
+          <button class="outline-btn notice-detail">
+            View Details
+          </button>
+        </div>
+
+        <div class="notice-card" data-category="events">
+          <span class="badge event-badge">Event</span>
+          <h2>Annual Management Fest</h2>
+          <p>
+            Registrations are now open for student participation.
+          </p>
+          <button class="outline-btn notice-detail">
+            View Details
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CALENDAR ================= -->
+
+    <section id="calendar" class="page-section">
+
+      <div class="page-heading">
+        <h1>Academic Calendar 📅</h1>
+        <p>Important dates and upcoming deadlines.</p>
+      </div>
+
+      <div class="calendar-grid">
+
+        <div class="calendar-card">
+          <span>12 SEP</span>
+          <h2>Semester Registration</h2>
+          <p>Academic Office</p>
+        </div>
+
+        <div class="calendar-card">
+          <span>18 SEP</span>
+          <h2>Scholarship Deadline</h2>
+          <p>Student Welfare Office</p>
+        </div>
+
+        <div class="calendar-card">
+          <span>20 SEP</span>
+          <h2>Internal Assessment</h2>
+          <p>Academic Block</p>
+        </div>
+
+        <div class="calendar-card">
+          <span>25 SEP</span>
+          <h2>Management Fest</h2>
+          <p>College Auditorium</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SMART SEARCH ================= -->
+
+    <section id="search" class="page-section">
+
+      <div class="page-heading">
+        <h1>Smart Search 🔎</h1>
+        <p>Find campus information quickly.</p>
+      </div>
+
+      <div class="big-search">
+
+        <input
+          type="text"
+          id="smartSearchInput"
+          placeholder="Ask CampusOne anything..."
+        >
+
+        <button id="smartSearchBtn">
+          Search
+        </button>
+
+      </div>
+
+      <div class="example-questions">
+
+        <p>Try asking:</p>
+
+        <button class="question-btn">
+          Where is the library?
+        </button>
+
+        <button class="question-btn">
+          Where can I submit scholarship form?
+        </button>
+
+        <button class="question-btn">
+          When are the exams?
+        </button>
+
+        <button class="question-btn">
+          How can I get a bonafide certificate?
+        </button>
+
+      </div>
+
+      <div id="smartSearchAnswer" class="answer-card"></div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="page-section">
+
+      <div class="page-heading">
+        <h1>Campus Services 🏫</h1>
+        <p>Access important campus facilities.</p>
+      </div>
+
+      <div class="service-grid-large">
+
+        <div class="service-card">
+          <div class="large-icon">📚</div>
+          <h2>Library</h2>
+          <p>Books, digital resources and reading rooms.</p>
+          <button class="outline-btn">Open Service</button>
+        </div>
+
+        <div class="service-card">
+          <div class="large-icon">💳</div>
+          <h2>Fee Payment</h2>
+          <p>Check fees and payment-related information.</p>
+          <button class="outline-btn">Open Service</button>
+        </div>
+
+        <div class="service-card">
+          <div class="large-icon">📄</div>
+          <h2>Certificates</h2>
+          <p>Apply for bonafide and other certificates.</p>
+          <button class="outline-btn">Open Service</button>
+        </div>
+
+        <div class="service-card">
+          <div class="large-icon">🎓</div>
+          <h2>Placement Cell</h2>
+          <p>Find placement and internship information.</p>
+          <button class="outline-btn">Open Service</button>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EVENTS ================= -->
+
+    <section id="events" class="page-section">
+
+      <div class="page-heading">
+        <h1>Clubs & Events 🎉</h1>
+        <p>Discover activities happening around campus.</p>
+      </div>
+
+      <div class="event-grid">
+
+        <div class="event-card">
+          <div class="event-image">🎤</div>
+
+          <div class="event-content">
+            <span>25 SEP • 10:00 AM</span>
+            <h2>Annual Management Fest</h2>
+            <p>College Auditorium</p>
+
+            <button class="primary-btn register-btn">
+              Register
+            </button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image">💡</div>
+
+          <div class="event-content">
+            <span>28 SEP • 2:00 PM</span>
+            <h2>Startup Idea Competition</h2>
+            <p>Seminar Hall</p>
+
+            <button class="primary-btn register-btn">
+              Register
+            </button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image">🏆</div>
+
+          <div class="event-content">
+            <span>30 SEP • 11:00 AM</span>
+            <h2>Inter College Quiz</h2>
+            <p>Conference Room</p>
+
+            <button class="primary-btn register-btn">
+              Register
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= REPORT PROBLEM ================= -->
+
+    <section id="report" class="page-section">
+
+      <div class="page-heading">
+        <h1>Report a Problem ⚠️</h1>
+        <p>Tell us about any campus issue.</p>
+      </div>
+
+      <div class="form-card">
+
+        <form id="problemForm">
+
+          <label>Problem Category</label>
+
+          <select id="problemCategory" required>
+            <option value="">Select category</option>
+            <option>Academic</option>
+            <option>Infrastructure</option>
+            <option>Library</option>
+            <option>IT / Portal</option>
+            <option>Other</option>
+          </select>
+
+
+          <label>Describe the Problem</label>
+
+          <textarea
+            id="problemDescription"
+            rows="5"
+            placeholder="Describe your problem..."
+            required
+          ></textarea>
+
+
+          <label>Location</label>
+
+          <input
+            type="text"
+            id="problemLocation"
+            placeholder="Example: Library, Room 204"
+          >
+
+
+          <button type="submit" class="primary-btn">
+            Submit Report
+          </button>
+
+        </form>
+
+        <div id="formMessage"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROFILE ================= -->
+
+    <section id="profile" class="page-section">
+
+      <div class="page-heading">
+        <h1>My Profile 👤</h1>
+        <p>Your CampusOne student profile.</p>
+      </div>
+
+      <div class="profile-card">
+
+        <div class="profile-avatar">
+          P
+        </div>
+
+        <div class="profile-details">
+
+          <h2>Priya Bohra</h2>
+
+          <p><strong>Program:</strong> MBA</p>
+          <p><strong>Semester:</strong> 1</p>
+          <p><strong>Student ID:</strong> MBA2026</p>
+          <p><strong>Email:</strong> student@campusone.com</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- ================= ASK CAMPUSONE MODAL ================= -->
+
+  <div class="modal" id="askModal">
+
+    <div class="modal-content">
+
+      <button class="modal-close" id="closeModal">
+        ✕
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-icon">✨</div>
+
+        <div>
+          <h2>Ask CampusOne</h2>
+          <p>Get quick answers about your campus.</p>
+        </div>
+      </div>
+
+
+      <div class="modal-search">
+
+        <input
+          type="text"
+          id="modalSearchInput"
+          placeholder="Ask your question..."
+        >
+
+        <button id="modalSearchBtn">
+          Search
+        </button>
+
+      </div>
+
+
+      <div id="modalAnswer" class="modal-answer"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+            </html>
